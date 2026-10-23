@@ -48,7 +48,7 @@ void draw()
 {
     background(255);
  
-    fill(255, 0, 0);
+    fill(0, 255, 0);
     stroke(0);
  
     // -- Draw the pegs
