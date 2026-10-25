@@ -1,4 +1,5 @@
-day                     time spent                activity
-friday                   1 hour                    walking
-saturday                 3 hours                   studing 
-sunday                   2 hours                   whatching football
+
+day,activity,time_spent_hours
+Friday,Walking,1
+Saturday,Studying,3
+Sunday,Watching football,2
