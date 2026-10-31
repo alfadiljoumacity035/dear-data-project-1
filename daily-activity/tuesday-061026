@@ -1,3 +1,4 @@
+#this is Tuesday activity
 void setup() {
   size(300, 600);
   background(245);
