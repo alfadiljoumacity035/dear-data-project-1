@@ -1,0 +1,60 @@
+float scrollY = 0;
+int totalHeight = 900;  // 3 days x 300 pixels, increase as you add days
+
+void setup() {
+  size(500, 600);
+}
+
+void draw() {
+  background(245);
+  fill(30);
+
+  translate(0, -scrollY);  // shift everything by the scroll amount
+
+  drawMonday(0);
+  drawTuesday(300);
+  drawWednesday(600);
+}
+
+void mouseWheel(MouseEvent event) {
+  scrollY += event.getCount() * 20;               // 20 = scroll speed
+  scrollY = constrain(scrollY, 0, totalHeight - height);  // stop at top and bottom
+}
+
+void drawMonday(int y) {
+  textSize(22);
+  text("Activity Diary - Row 1", 30, y + 40);
+  textSize(16);
+  text("Day: Monday", 30, y + 90);
+  text("Date: 05/10/2026", 30, y + 120);
+  text("Time: 09:00", 30, y + 150);
+  text("Activity: Lecture", 30, y + 180);
+  text("Location: University", 30, y + 210);
+  text("Mood: Happy", 30, y + 240);
+}
+
+
+void drawTuesday(int y) {
+  textSize(22);
+  text("Activity Diary - Row 2", 30, y + 40);
+  textSize(16);
+  text("Day: Tuesday", 30, y + 90);
+  text("Date: 06/10/2026", 30, y + 120);
+  text("Time: 11:00", 30, y + 150);
+  text("Activity: Tutorial", 30, y + 180);
+  text("Location: University", 30, y + 210);
+  text("Mood: Good", 30, y + 240);
+}
+
+
+void drawWednesday(int y) {
+  textSize(22);
+  text("Activity Diary - Row 3", 30, y + 40);
+  textSize(16);
+  text("Day: Wednesday", 30, y + 90);
+  text("Date: 07/10/2026", 30, y + 120);
+  text("Time: 19:00", 30, y + 150);
+  text("Activity: Walk", 30, y + 180);
+  text("Location: Kings cross", 30, y + 210);
+  text("Mood: Bored", 30, y + 240);
+}
