@@ -15,6 +15,8 @@ void draw() {
   drawTuesday(300);
   drawWednesday(600);
   drawThursday(900); 
+  drawFriday(1200);
+
 }
 
 void mouseWheel(MouseEvent event) {
@@ -70,5 +72,17 @@ text("Date: 08/10/2026", 30, y + 120);
 text("Time: 20:00", 30, y + 150);
 text("Activity: Whatching ftball", 30, y + 180);
 text("Location: Box park", 30, y + 210);
+text("Mood: Happy", 30, y + 240);
+}
+
+void drawFriday(int y) {
+textSize(22);
+text("Activity Diary - Row 5", 30, y + 40);
+textSize(16);
+text("Day: Friday", 30, y + 90);
+text("Date: 09/10/2026", 30, y + 120);
+text("Time: 15:00", 30, y + 150);
+text("Activity: Meeting friend", 30, y + 180);
+text("Location: Fulham", 30, y + 210);
 text("Mood: Happy", 30, y + 240);
 }
