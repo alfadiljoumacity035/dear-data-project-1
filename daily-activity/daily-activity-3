@@ -1,5 +1,5 @@
 float scrollY = 0;
-int totalHeight = 900;  // 3 days x 300 pixels, increase as you add days
+int totalHeight = 7500;  // 3 days x 300 pixels, increase as you add days
 
 void setup() {
   size(500, 600);
@@ -21,8 +21,8 @@ void draw() {
   drawMonday2(2100);
   drawMonday3(2400);
   drawWednesday2(2700);
-  drawThrusday2(3000);
-  drawThrusday3(3300);
+  drawThursday2(3000);
+  drawThursday3(3300);
   drawFriday2(3600);
   drawFriday3(3900);
   drawSaturday2(4200);
@@ -35,6 +35,7 @@ void draw() {
   drawMonday5(6300);
   drawTuesday4(6600);
   drawTuesday5(6900);
+  drawTuesday6(7200);
 
 
 }
@@ -348,7 +349,7 @@ String getTuesday6() {
 // Draws row 25 using the text returned above
 void drawTuesday6(int y) {
   textSize(22);
-  text("Activity Diary - Row 25", 30, y + 40);
+  text("Activity Diary - Row 27", 30, y + 40);
   textSize(16);
   textLeading(30);
   text(getTuesday6(), 30, y + 90);
