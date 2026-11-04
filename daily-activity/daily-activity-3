@@ -20,6 +20,7 @@ void draw() {
   drawSunday(1800);
   drawMonday2(2100);
   drawMonday3(2400);
+  drawWednesday2(2700);
 
 }
 
@@ -137,4 +138,16 @@ text("Time: 08:00", 30, y + 150);
 text("Activity: Sycling", 30, y + 180);
 text("Location: Angel", 30, y + 210);
 text("Mood: Happy", 30, y + 240);
+}
+
+void drawWednesday2(int y) {
+textSize(22);
+text("Activity Diary - Row 12", 30, y + 40);
+textSize(16);
+text("Day: Wednesday", 30, y + 90);
+text("Date: 14/10/2026", 30, y + 120);
+text("Time: 17:00", 30, y + 150);
+text("Activity: Cooking", 30, y + 180);
+text("Location: Home", 30, y + 210);
+text("Mood: Calm", 30, y + 240);
 }
