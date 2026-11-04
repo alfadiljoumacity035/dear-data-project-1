@@ -334,3 +334,22 @@ text("Activity: Reading", 30, y + 180);
 text("Location: Home", 30, y + 210);
 text("Mood: Satisfaction", 30, y + 240);
 }
+
+// Method with a return value: builds the text for row 25 and returns it
+String getTuesday6() {
+  String entry = "Day: Tuesday\n" +
+                 "Date: 20/10/2026\n" +
+                 "Time: 21:00\n" +
+                 "Activity: Social media\n" +
+                 "Location: Home\n" +
+                 "Mood: Bored";
+  return entry;
+}
+// Draws row 25 using the text returned above
+void drawTuesday6(int y) {
+  textSize(22);
+  text("Activity Diary - Row 25", 30, y + 40);
+  textSize(16);
+  textLeading(30);
+  text(getTuesday6(), 30, y + 90);
+}
