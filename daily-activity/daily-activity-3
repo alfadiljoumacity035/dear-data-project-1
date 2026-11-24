@@ -1,5 +1,5 @@
 float scrollY = 0;
-int totalHeight = 7800;  
+int totalHeight = 8100;  
 void setup() {
   size(500, 600);
 }
@@ -36,6 +36,7 @@ void draw() {
   drawTuesday5(6900);
   drawTuesday6(7200);
   drawWednesday3(7500);
+  drawWednesday4(7800);
 
 
 }
@@ -369,4 +370,19 @@ void drawWednesday3(int y) {
   text("Activity: " + getActivity(), 30, y + 180);
   text("Location: University", 30, y + 210);
   text("Mood: Happy", 30, y + 240);
+}
+
+String getActivity2() {
+  return "Listening to music";
+}
+void drawWednesday4(int y) {
+  textSize(22);
+  text("Activity Diary - Row 29", 30, y + 40);
+  textSize(16);
+  text("Day: Wednesday", 30, y + 90);
+  text("Date: 21/10/2026", 30, y + 120);
+  text("Time: 14:30", 30, y + 150);
+  text("Activity: " + getActivity2(), 30, y + 180);
+  text("Location: Home", 30, y + 210);
+  text("Mood: Relaxed", 30, y + 240);
 }
