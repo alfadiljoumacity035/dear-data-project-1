@@ -1,6 +1,5 @@
 float scrollY = 0;
-int totalHeight = 7500;  // 3 days x 300 pixels, increase as you add days
-
+int totalHeight = 7800;  
 void setup() {
   size(500, 600);
 }
@@ -36,6 +35,7 @@ void draw() {
   drawTuesday4(6600);
   drawTuesday5(6900);
   drawTuesday6(7200);
+  drawWednesday3(7500);
 
 
 }
@@ -353,4 +353,20 @@ void drawTuesday6(int y) {
   textSize(16);
   textLeading(30);
   text(getTuesday6(), 30, y + 90);
+}
+
+String getActivity() {
+  return "Lecture";
+}
+
+void drawWednesday3(int y) {
+  textSize(22);
+  text("Activity Diary - Row 28", 30, y + 40);
+  textSize(16);
+  text("Day: Wednesday", 30, y + 90);
+  text("Date: 21/10/2026", 30, y + 120);
+  text("Time: 07:30", 30, y + 150);
+  text("Activity: " + getActivity(), 30, y + 180);
+  text("Location: University", 30, y + 210);
+  text("Mood: Happy", 30, y + 240);
 }
